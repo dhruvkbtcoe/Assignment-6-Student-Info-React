@@ -1,0 +1,235 @@
+/* Base Page Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Vibrant Colorful Background Gradient */
+body {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  width: 100%;
+  max-width: 850px;
+}
+
+/* White Card Outer Container */
+.main-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Header Banner */
+.title-header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eef2f6;
+}
+
+.title-header h2 {
+  color: #2b3674;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.title-header p {
+  color: #707ebe;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Two-Column Grid */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Sub Card Layouts */
+.card-box {
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card {
+  background-color: #f4f7fe;
+  border: 1px solid #e0e7ff;
+}
+
+.details-card {
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header h3 {
+  font-size: 17px;
+  color: #1b2559;
+}
+
+/* Colorful Badges */
+.pill-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.form-badge {
+  background-color: #e0e7ff;
+  color: #4318ff;
+}
+
+.success-badge {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* Form Groups */
+.input-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2b3674;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #4318ff;
+  box-shadow: 0 0 0 3px rgba(67, 24, 255, 0.1);
+}
+
+/* Colorful Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #4318ff 0%, #3a0ca3 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Details Section Items */
+.border-bottom {
+  border-bottom: 1px solid #dcfce7;
+  padding-bottom: 10px;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-item {
+  background-color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid #e2e8f0;
+}
+
+.detail-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.highlight-name {
+  color: #2563eb;
+  font-size: 16px;
+}
+
+.marks-tag {
+  color: #16a34a;
+}
+
+/* Empty State */
+.empty-box {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empty-content {
+  padding: 20px;
+}
+
+.empty-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.empty-content h4 {
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+.empty-content p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Mobile Screen Adjustment */
+@media (max-width: 650px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
